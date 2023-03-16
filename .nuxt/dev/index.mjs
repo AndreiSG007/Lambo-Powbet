@@ -1,35 +1,45 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { provider, isWindows } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/h3/dist/index.mjs';
-import { createRenderer } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/vue/server-renderer/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/hookable/dist/index.mjs';
-import { snakeCase } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/scule/dist/index.mjs';
-import { hash } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, withQuery } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/ufo/dist/index.mjs';
-import { createStorage } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/unstorage/drivers/fs.mjs';
-import defu from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/node_modules/radix3/dist/index.mjs';
+import { provider, isWindows } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/vue/server-renderer/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/hookable/dist/index.mjs';
+import { snakeCase } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, withQuery } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/norbert/Projects/Lambo-Powbet/node_modules/radix3/dist/index.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{}};
+const inlineAppConfig = {};
+
+
+
+const appConfig = defuFn(inlineAppConfig);
+
+const _runtimeConfig = {"app":{"baseURL":"/mateadmin/powbet/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
-const getEnv = (key) => {
+overrideConfig(_runtimeConfig);
+const runtimeConfig = deepFreeze(_runtimeConfig);
+const useRuntimeConfig = () => runtimeConfig;
+deepFreeze(appConfig);
+function getEnv(key) {
   const envKey = snakeCase(key).toUpperCase();
   return destr(
     process.env[ENV_PREFIX + envKey] ?? process.env[ENV_PREFIX_ALT + envKey]
   );
-};
+}
 function isObject(input) {
   return typeof input === "object" && !Array.isArray(input);
 }
@@ -47,9 +57,6 @@ function overrideConfig(obj, parentKey = "") {
     }
   }
 }
-overrideConfig(_runtimeConfig);
-const config$1 = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => config$1;
 function deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
@@ -61,7 +68,7 @@ function deepFreeze(object) {
   return Object.freeze(object);
 }
 
-const serverAssets = [{"baseName":"server","dir":"/Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/norbert/Projects/Lambo-Powbet/server/assets"}];
 
 const assets = createStorage();
 
@@ -71,14 +78,16 @@ for (const asset of serverAssets) {
 
 const storage = createStorage({});
 
-const useStorage = () => storage;
-
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/norbert/Projects/Lambo-Powbet","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/norbert/Projects/Lambo-Powbet/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/norbert/Projects/Lambo-Powbet/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/norbert/Projects/Lambo-Powbet/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+
+function useStorage(base = "") {
+  return base ? prefixStorage(storage, base) : storage;
+}
 
 const defaultCacheOptions = {
   name: "_",
@@ -86,10 +95,10 @@ const defaultCacheOptions = {
   swr: true,
   maxAge: 1
 };
-function defineCachedFunction(fn, opts) {
+function defineCachedFunction(fn, opts = {}) {
   opts = { ...defaultCacheOptions, ...opts };
   const pending = {};
-  const group = opts.group || "nitro";
+  const group = opts.group || "nitro/functions";
   const name = opts.name || fn.name || "_";
   const integrity = hash([opts.integrity, fn, opts]);
   const validate = opts.validate || (() => true);
@@ -104,7 +113,7 @@ function defineCachedFunction(fn, opts) {
     const _resolve = async () => {
       const isPending = pending[key];
       if (!isPending) {
-        if (entry.value !== void 0 && (opts.staleMaxAge || 0) >= 0) {
+        if (entry.value !== void 0 && (opts.staleMaxAge || 0) >= 0 && opts.swr === false) {
           entry.value = void 0;
           entry.integrity = void 0;
           entry.mtime = void 0;
@@ -112,7 +121,14 @@ function defineCachedFunction(fn, opts) {
         }
         pending[key] = Promise.resolve(resolver());
       }
-      entry.value = await pending[key];
+      try {
+        entry.value = await pending[key];
+      } catch (error) {
+        if (!isPending) {
+          delete pending[key];
+        }
+        throw error;
+      }
       if (!isPending) {
         entry.mtime = Date.now();
         entry.integrity = integrity;
@@ -484,11 +500,11 @@ const errorHandler = (async function errorhandler(error, event) {
   event.node.res.end(await res.text());
 });
 
-const _lazy_qrsm8n = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_ZN9ByH = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_qrsm8n, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_qrsm8n, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_ZN9ByH, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_ZN9ByH, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -610,8 +626,8 @@ const _template = (messages) => _render({ messages: { ..._messages, ...messages 
 const template = _template;
 
 const errorDev = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  template: template
+      __proto__: null,
+      template: template
 });
 
 const appRootId = "__nuxt";
@@ -628,9 +644,9 @@ function publicAssetsURL(...path) {
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('/Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('/Users/norbert/Projects/Lambo-Powbet/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('/Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/Users/norbert/Projects/Lambo-Powbet/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -811,14 +827,14 @@ function splitPayload(ssrContext) {
 }
 
 const renderer$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: renderer
+      __proto__: null,
+      default: renderer
 });
 
-const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<title>Landing page</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"icon\" type=\"image/*\" href=\"/favicon.ico\">\n<link rel=\"stylesheet\" href=\"https://use.typekit.net/xom8nwh.css\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
+const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<title>Lambo Promo - Powbet</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"icon\" type=\"image/*\" href=\"/favicon.ico\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: _virtual__headStatic
+      __proto__: null,
+      default: _virtual__headStatic
 });
 //# sourceMappingURL=index.mjs.map

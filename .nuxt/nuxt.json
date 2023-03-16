@@ -1,9 +1,9 @@
 {
-  "_hash": "mH3o05H6KX",
+  "_hash": "MJScR9aBoo",
   "project": {
-    "rootDir": "/Users/andreisoftgenius/Documents/LAMBO/lambo-promo-PowBet"
+    "rootDir": "/Users/norbert/Projects/Lambo-Powbet"
   },
   "versions": {
-    "nuxt": "3.2.2"
+    "nuxt": "3.3.1"
   }
 }
