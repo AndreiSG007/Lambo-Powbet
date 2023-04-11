@@ -56,9 +56,9 @@
           </vue-countdown>
         </no-ssr>
       </div>
-      <a target="_blank" href="https://powbet.com/en/">
+      <div @click="casinoRedirect">
         <button class="main-button">{{ $t("playNow") }}</button>
-      </a>
+      </div>
       <div>
         <img
           src="/assets/header_group_Pow.png"
@@ -234,6 +234,15 @@ export default defineComponent({
 
     const onHide = () => (visibleRef.value = false);
 
+    const route = useRoute();
+    const casinoRedirect = () => {
+      let url = 'https://powbet.com/en/';
+      if (route.query.btag) {
+        url += `?btag=${route.query.btag}`;
+      }
+      window.open(url, '_blank');
+    };
+
     return {
       visibleRef,
       indexRef,
@@ -249,6 +258,7 @@ export default defineComponent({
       setControlledSwiper,
       openModal,
       closeModal,
+      casinoRedirect,
     };
   },
 });
