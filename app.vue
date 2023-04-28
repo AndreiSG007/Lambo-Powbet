@@ -13,15 +13,11 @@
         <h1>{{ $t("lamborghiniHuracan") }}</h1>
       </div>
 
-      <a target="_blank" href="https://powbet.com/en/">
+      <div @click="casinoRedirect">
         <button class="main-button">{{ $t("playNow") }}</button>
       </div>
       <div>
-        <img
-          src="/assets/header_group_Pow.png"
-          alt=""
-          class="main-image"
-        />
+        <img src="/assets/header_group_Pow.png" alt="" class="main-image" />
       </div>
 
       <div class="steps">
@@ -193,11 +189,11 @@ export default defineComponent({
 
     const route = useRoute();
     const casinoRedirect = () => {
-      let url = 'https://powbet.com/en/';
+      let url = "https://powbet.com/en/";
       if (route.query.btag) {
         url += `?btag=${route.query.btag}`;
       }
-      window.open(url, '_blank');
+      window.open(url, "_blank");
     };
 
     return {
